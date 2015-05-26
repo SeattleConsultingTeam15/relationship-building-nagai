@@ -1,0 +1,8 @@
+DaoType=S2JDBC
+DefaultResourcePath=/relationship-building/src/main/resources
+DefaultRootPackage=relationshipBuilding
+DefaultSrcPath=/relationship-building/src/main/java
+ServletPath=/relationship-building
+ViewType=SA-Struts
+WebContentsRoot=src/main/webapp/
+eclipse.preferences.version=1
