@@ -33,9 +33,7 @@ public class TopAction {
      */
 	@Execute(validator = false)
 	public String index() {
-    	/*更新しました2*/
-		/*nagai*/
-		/*更新*/
+    	
 		//ダッシュボードに表示する値(話した人・話していない人の数,割合をDtoにセットする)
     	indexService.createAnalysisEmployeeDto(analysisEmployeesDto);
 
