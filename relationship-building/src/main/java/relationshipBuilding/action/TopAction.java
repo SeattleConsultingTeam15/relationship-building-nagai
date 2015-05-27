@@ -14,15 +14,15 @@ import relationshipBuilding.service.IndexService;
  *
  */
 public class TopAction {
-	
+
 	//トップページの機能関するサービスクラス
 	@Resource
 	protected IndexService indexService;
-	
+
 	//ダッシュボードに表示する変数を格納するDto
 	@Resource
 	public AnalysisEmployeesDto analysisEmployeesDto;
-	
+
 	//ログイン情報を格納するDto
 	@Resource
 	public LoginDto loginDto;
@@ -33,11 +33,11 @@ public class TopAction {
      */
 	@Execute(validator = false)
 	public String index() {
-    	/*更新しました1*/
+    	/*更新しました2*/
 		//ダッシュボードに表示する値(話した人・話していない人の数,割合をDtoにセットする)
     	indexService.createAnalysisEmployeeDto(analysisEmployeesDto);
-    	
+
         return "index.jsp";
 	}
-    
+
 }
