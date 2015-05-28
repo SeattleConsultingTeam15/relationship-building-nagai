@@ -32,6 +32,9 @@ public class TopAction {
 
 	public Integer result;
 
+	//結果に付加する変数名
+	private static final String EMPLOYEE_RELATIONSHIP_ANALYSYS_JSON_NAME = "java_message=";
+
 	/**
 	 * トップページにアクセスした時に呼び出されるメソッド.
 	 * 
@@ -48,7 +51,7 @@ public class TopAction {
 	
 	@Execute(validator = false)
     public String makeJson() {
-		
+		/*更新*/
 		/* jsonファイルの中身作成 */
 		Map<String, Object> jsonResponseData = new HashMap<String, Object>();
 
@@ -73,13 +76,12 @@ public class TopAction {
 				(int) analysisEmployeesDto.notTalkedEmployeesRate);
 
 		// JSONICライブラリによりJSON形式へ変換
-		String jsonText = JSON.encode(jsonResponseData);
+		String jsonText = EMPLOYEE_RELATIONSHIP_ANALYSYS_JSON_NAME + JSON.encode(jsonResponseData);
 
-		ResponseUtil.write(jsonText, "application/json");
+		ResponseUtil.write(jsonText, "application/javascript");
 
 		return null;
 		
 	}
 	
-
 }
