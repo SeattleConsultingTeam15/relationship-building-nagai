@@ -50,7 +50,7 @@ public class TopAction {
 	@Execute(validator = false)
     public String makeJson() {
 		
-		// ダッシュボードに表示する値(話した人・話していない人の数,割合をDtoにセットする)
+		// 更新ダッシュボードに表示する値(話した人・話していない人の数,割合をDtoにセットする)
 		indexService.createAnalysisEmployeeDto(analysisEmployeesDto);
 		
 		/* jsonファイルの中身作成 */
