@@ -1,5 +1,5 @@
 
-<!-- 
+<!--
 session.isNew():クライアントがセッションを管理できないときにtrueを返す(タイムアウト、初めてアクセスした時等)
  -->
 <html>
@@ -14,9 +14,9 @@ session.isNew():クライアントがセッションを管理できないとき�
 <div id="container">
 
 		<div id="header">
-		
+
 			<p id="logo">Human　Relationship building</p>
-			
+
 			<div id="navbar">
 				<ul>
 					<li><a href="http://localhost:8080/relationship-building/">TOP</a></li>
@@ -25,7 +25,7 @@ session.isNew():クライアントがセッションを管理できないとき�
 					<li><a href="http://localhost:8080/relationship-building/logout/">ログアウト</a></li>
 				</ul>
 			</div><!-- navbar -->
-			
+
 		</div><!-- header -->
 		<div>
 			<h2>ダッシュボード</h2>
@@ -48,12 +48,13 @@ session.isNew():クライアントがセッションを管理できないとき�
 			<p>話したことがない人の人数</p>
 			<p>${analysisEmployeesDto.notTalkedEmployeesNumber}</p>
 		</div>
-		
+
 		<div id="footer">
 			<address>Copyright(C) team15</address>
 		</div><!-- footer -->
-		
+
+
 	</div><!-- container -->
-	
+
 </body>
 </html>
