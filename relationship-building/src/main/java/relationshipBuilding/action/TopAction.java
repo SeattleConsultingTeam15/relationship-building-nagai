@@ -51,7 +51,8 @@ public class TopAction {
 	
 	@Execute(validator = false)
     public String makeJson() {
-		/*更新*/
+		
+		
 		/* jsonファイルの中身作成 */
 		Map<String, Object> jsonResponseData = new HashMap<String, Object>();
 
